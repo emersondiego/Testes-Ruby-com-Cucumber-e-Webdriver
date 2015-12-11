@@ -10,13 +10,13 @@ Dado(/^que eu esteja autenticado como administrador$/) do
   @navegador.find_element(:css, '.input input.button').click
 end
 
-# Dado(/^que eu tenha acessado o menu "([^"]*)"$/) do |arg1|
-#   pending # Write code here that turns the phrase above into concrete actions.input input.button
-# end
+Dado(/^que eu tenha acessado o menu "([^"]*)"$/) do |perfil|
+  @navegador.find_element(:css, 'li.item20 > a > span').click
+end
 
-# Dado(/^clicado em "Nova movimentação” para inserir uma movimentação$/) do
-#   pending # Write code here that turns the phrase above into concrete actions
-# end
+Dado(/^clicado em "Nova movimentação” para inserir uma movimentação$/) do
+
+end
 
 # Quando(/^informar "([^"]*)" como tipo de movimentação$/) do |arg1|
 #   pending # Write code here that turns the phrase above into concrete actions
@@ -37,3 +37,5 @@ end
 # Então(/^verei a mensagem "([^"]*)" como sucesso da operação$/) do |arg1|
 #   pending # Write code here that turns the phrase above into concrete actions
 # end
+
+  #@navegador.quit
